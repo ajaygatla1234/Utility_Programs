@@ -5,11 +5,10 @@ public class Fibonocci {
 
 	public static int fibonacciRecursion(int num) {
 
-		if(num==0) {
-			return 0;
-		}
-		if(num==1) {
-			return 1;
+		//If negative numbers are given, or if 0 or 1 are given, then the program will directly display the number.
+ 		//and also To avoid a StackOverflowError, we need to handle negative numbers appropriately to prevent infinite recursion.
+		if(num<=1) {          
+			return num;
 		}
 
 		return fibonacciRecursion(num-1)+fibonacciRecursion(num-2);
