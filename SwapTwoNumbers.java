@@ -25,14 +25,14 @@ public class SwapTwoNumbers {
 
 	public static void usingXOR_BitwiseOperator(int a, int b) {
 		
-        // Swap using XOR
-        a = a ^ b; // Step 1
-        b = a ^ b; // Step 2
-        a = a ^ b; // Step 3
-
-        // Print swapped values
-        System.out.println("Swapped values: a = " + a + ", b = " + b);
-    }
+	        // Swap using XOR
+	        a = a ^ b; // Step 1
+	        b = a ^ b; // Step 2
+	        a = a ^ b; // Step 3
+	
+	        // Print swapped values
+	        System.out.println("Swapped values: a = " + a + ", b = " + b);
+  	}
 	
 	public static void main(String[] args) {
 		
