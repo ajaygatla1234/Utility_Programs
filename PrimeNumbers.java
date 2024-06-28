@@ -8,7 +8,7 @@ public class PrimeNumbers {
 	            return false; // 1 and numbers less than 1 are not prime numbers
 	        }
 		
-		for(int i=2;i<=Math.sqrt(num);i++) {
+		for(int i=2;i<=Math.sqrt(num);i++) {  //If you start the loop with i = 1 without adding an extra condition, the code will incorrectly identify all numbers as not prime, because every number is divisible by 1.
 			if(num%i==0) {
 				return false;
 			}	
