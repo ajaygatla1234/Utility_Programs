@@ -32,6 +32,14 @@ public class SwapTwoNumbers {
 	
 	        // Print swapped values
 	        System.out.println("Swapped values: a = " + a + ", b = " + b);
+
+		// Example Execution:
+		// For a = 5 and b = 10:
+		
+		// Step 1: a = a ^ b = 5 ^ 10 = 15 (in binary: 0101 ^ 1010 = 1111)
+		// Step 2: b = a ^ b = 15 ^ 10 = 5 (in binary: 1111 ^ 1010 = 0101)
+		// Step 3: a = a ^ b = 15 ^ 5 = 10 (in binary: 1111 ^ 0101 = 1010)
+		// After these operations, a becomes 10 and b becomes 5, effectively swapping the values without using a third variable or the addition operator.
   	}
 	
 	public static void main(String[] args) {
