@@ -13,7 +13,7 @@ public class SwapTwoNumbers {
 		System.out.println("b="+b);
 	}
 	
-	public static void withoutThirdVariable(int a, int b) {
+	public static void usingArithmeticOperators(int a, int b) {
 		
 		a=a+b;
 		b=a-b;
@@ -22,6 +22,17 @@ public class SwapTwoNumbers {
 		System.out.println("\na="+a);
 		System.out.println("b="+b);
 	}
+
+	public static void usingXOR_BitwiseOperator(int a, int b) {
+		
+        // Swap using XOR
+        a = a ^ b; // Step 1
+        b = a ^ b; // Step 2
+        a = a ^ b; // Step 3
+
+        // Print swapped values
+        System.out.println("Swapped values: a = " + a + ", b = " + b);
+    }
 	
 	public static void main(String[] args) {
 		
@@ -35,6 +46,7 @@ public class SwapTwoNumbers {
 		
 		usingThirdVariable(a, b);
 		withoutThirdVariable(a, b);
+		usingXOR_BitwiseOperator(a,b);
 		
 		scanner.close();
 	}
