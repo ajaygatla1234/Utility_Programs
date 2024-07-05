@@ -14,6 +14,17 @@ public class GreatestOfThreeNums {
 		int j=i>c?i:c;
 		
 		System.out.println(j);
+
+		largest = c > (a > b ? a : b) ? c : ((a > b) ? a : b);  
+	}
+
+	public static void main(String[] args) {
+
+		int a=1,b=5,c=3;
+
+		int largest = c > (a > b ? a : b) ? c : ((a > b) ? a : b);  
+
+		System.out.println(j);
 	}
 
 	public static void main(String[] args) {
