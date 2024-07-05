@@ -4,6 +4,18 @@ import java.util.Scanner;
 
 public class GreatestOfThreeNums {
 
+
+	public static void main(String[] args) {
+
+		int a=1,b=5,c=3;
+		
+		int i=a>b?a:b;
+		
+		int j=i>c?i:c;
+		
+		System.out.println(j);
+	}
+
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
