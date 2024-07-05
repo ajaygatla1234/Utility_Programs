@@ -17,28 +17,29 @@ public class PrimeNumbers {
 	}
 
 	public static void isPrime2(int num){
-    		if (num <= 1) {
-      		 	 System.out.println("Not a prime");
-        		return; // Exit the method early
-    		}
+		if (num <= 1) {
+			System.out.println("Not a prime");
+			return; // Exit the method early
+		}
 
-   		 boolean isPrime = true;
+		boolean isPrime = true;
 
-   		 for (int i = 2; i <= Math.sqrt(num); i++) {
-    		    if (num % i == 0) {
-       		     isPrime = false; // If divisible by any number, it's not prime
-           	     break;
-       		 }
-    }
+		for (int i = 2; i <= Math.sqrt(num); i++) {
+			if (num % i == 0) {
+				isPrime = false; // If divisible by any number, it's not prime
+				break;
+			}
+		}
 
-    if (isPrime) {
-        System.out.println("It's a prime number");
-    } else {
-        System.out.println("Not a prime");
-    }
-}
-
-		
+		if (isPrime) {
+			System.out.println("It's a prime number");
+		} else {
+			System.out.println("Not a prime");
+		}
+	}
+	
+	
+			
 	
 	public static void main(String[] args) {
 				
@@ -48,6 +49,8 @@ public class PrimeNumbers {
 		else{
 			System.out.println("Its a prime Number");
 		}
+
+		isPrime2(100);
 	}
 
 }
