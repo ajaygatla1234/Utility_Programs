@@ -2,7 +2,7 @@ package com.gl;
 
 public class PrimeNumbers {
 	
-	public static boolean isPrime(int num) {
+	public static boolean isPrime1(int num) {
 		
 		 if (num <= 1) {
 	            return false; // 1 and numbers less than 1 are not prime numbers
@@ -15,6 +15,30 @@ public class PrimeNumbers {
 		}
 		return true;
 	}
+
+	public static void isPrime2(int num){
+
+		if(num<=1){
+			System.out.println("Not a prime");	
+		}
+
+		boolean b=true;
+
+		for(int i=2;i<=Math.sqrt(num);i++) {
+			if(num%i==0) {
+				b=false;
+				break;
+			}
+		}
+		
+		if(b) {
+			System.out.println("Its a prime Number");
+		}
+		else {
+			System.out.println("Not a prime");
+		}
+	}
+		
 	
 	public static void main(String[] args) {
 				
